@@ -16,6 +16,7 @@ class GetWeatherInfo:
         一些初始设置
         '''
         self.flag = flag
+        self.key="SCDmzBYv6mN5EGIek"
         # flag表示的是查询天气的类型：实时天气还是近三天天气
         if city == "北京":
             self.city = "beijing"
@@ -24,8 +25,10 @@ class GetWeatherInfo:
         else:
             self.city = "guangzhou"
         # city表示的是我们查询的城市
-        self.real_time = "https://api.seniverse.com/v3/weather/now.json?key=******=" + self.city + "&language=zh-Hans&unit=c"
-        self.nearly_3_days = "https://api.seniverse.com/v3/weather/daily.json?key=******=" + self.city + "&language=zh-Hans&unit=c&start=0&days=5"
+        
+        self.real_time = f"https://api.seniverse.com/v3/weather/now.json?key={self.key}&location={self.city}&language=zh-Hans&unit=c"
+        self.nearly_3_days = f"https://api.seniverse.com/v3/weather/daily.json?key={self.key}&location={self.city}&language=zh-Hans&unit=c&start=0&days=5"
+        #self.nearly_3_days = "https://api.seniverse.com/v3/weather/daily.json?key=SCDmzBYv6mN5EGIek=" + self.city + "&language=zh-Hans&unit=c&start=0&days=5"
 
     def getweather(self):
         '''

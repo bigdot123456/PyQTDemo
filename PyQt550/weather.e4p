@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Project SYSTEM "Project-5.1.dtd">
 <!-- eric project file for project weather -->
-<!-- Saved: 2018-06-07, 22:09:30 -->
-<!-- Copyright (C) 2018 ,  -->
+<!-- Saved: 2019-06-18, 17:12:28 -->
+<!-- Copyright (C) 2019 ,  -->
 <Project version="5.1">
   <Language></Language>
   <Hash>06fb8609ae8a525e11a3d28abac662cd6a5b93b6</Hash>
@@ -17,7 +17,6 @@
     <Source>Ui_realtimew.py</Source>
     <Source>Ui_showeather.py</Source>
     <Source>__init__.py</Source>
-    <Source>dgrealtime.py</Source>
     <Source>realtimeweather.py</Source>
     <Source>showtab.py</Source>
     <Source>weather.py</Source>
